@@ -1,4 +1,4 @@
- # GitHub App.
+` # GitHub App.
 
  ## App demo sobre conhecimento de arquitura de desenvolvimento. 
  
@@ -9,36 +9,32 @@
 * Tela com a lista de issues do repositório.
     Cada item da lista contêm os seguintes elementos:
     
-    [x] Título.
-    [x] Estado (ABERTO, FECHADO).
+    * [x] Título.
+    * [x] Estado (ABERTO, FECHADO).
 
 * Uma que mostra os detalhes do issue que foi selecionado na lista, que contêm os seguintes elementos:
     
-    [x] Título.
-    [x] Texto de descrição.
-    [x] Avatar do usuário.
-    [x] Data de criação.
-    [x] Um botão que abre o browser com o link issue do site do GitHub.
+    * [x] Título.
+    * [x] Texto de descrição.
+    * [x] Avatar do usuário.
+    * [x] Data de criação.
+    * [x] Um botão que abre o browser com o link issue do site do GitHub.
 
 
-## Outra features
+## Outras features
 
 [x] Localização (pt-BR e en-US)
 
 ## Arquitetura
 
-✅ Escrito em Swift.
-
-✅ Testes Unitários (XCTest).
-
-✅ Clean Architecture (MVVM design partter).
-
-✅ Clean Architecture (Coordinator design partter).
-
-✅ Chamadas de REST com URLSession/Alamofire
+* ✅ Escrito em Swift.
+* ✅ Testes Unitários (XCTest).
+* ✅ Clean Architecture (MVVM design partter).
+* ✅ Clean Architecture (Coordinator design partter).
+* ✅ Chamadas de REST com URLSession/Alamofire
 
 
 ## Ferramentas de ambiente (TODO)
 
- [ ] Fastlane
- [ ] Bitrise (CI /CD)
+ * [ ] Fastlane
+ * [ ] Bitrise (CI /CD)
