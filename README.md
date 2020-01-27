@@ -34,7 +34,8 @@
 * ✅ Chamadas de REST com URLSession/Alamofire
 
 
-## Ferramentas de ambiente (TODO)
+## Ferramentas de ambiente
 
- * [ ] Fastlane
- * [ ] Bitrise (CI /CD)
+ * [X] Cocoapods
+ * [X] TODO: Bitrise (CI /CD)
+ * [ ] TODO: Fastlane 
