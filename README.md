@@ -1,13 +1,14 @@
-[![Build Status](https://app.bitrise.io/app/7fd3c7f523c0b036/status.svg?token=n1HcVC1C2l0wJxXa7WMb5A)](https://app.bitrise.io/app/7fd3c7f523c0b036)
-
+[![Build Status](https://app.bitrise.io/app/7fd3c7f523c0b036/status.svg?token=n1HcVC1C2l0wJxXa7WMb5A)](https://app.bitrise.io/app/7fd3c7f523c0b036) 
+(https://img.shields.io/twitter/follow/dairan?label=Follow)
 
 # GitHub App.
 
- ## App demo sobre conhecimento de arquitura de desenvolvimento. 
- 
- Consome API do Github Issues (https://developer.github.com/v3/issues)
+### Demo de aplicação de conhecimentos sobre arquitetura de desenvolvimento de apps para iOS. 
 
-## O aplicativo contêm
+O app consiste em duas telas que consome API do Github Issues:  https://developer.github.com/v3/issues
+ 
+
+## Features principais
 
 * Tela com a lista de issues do repositório.
     Cada item da lista contêm os seguintes elementos:

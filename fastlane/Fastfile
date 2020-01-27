@@ -21,4 +21,33 @@ platform :ios do
     build_app(workspace: "GitHubIssuesApp.xcworkspace", scheme: "GitHubIssuesApp")
     upload_to_testflight
   end
+  before_all do
+  end
+  desc "Submit a new Beta Build to Apple TestFlight"
+  lane :betaTESTE do
+      # Add a badge to app icon. This will actually overwrite images, so be careful.
+      # More info: https://github.com/HazAT/fastlane-plugin-badge & https://github.com/HazAT/badge
+      add_badge(
+          alpha: true,
+          shield: "v#{ENV['XPI_VERSION']}-#{ENV['XPI_BUILD']}-grey"
+      )
+      #build app
+      gym(
+          export_method: "app-store",
+          export_options: {
+              provisioningProfiles: {
+                  "app.bundle.id" => "Your Provision Profile Name",
+              }
+          },
+      scheme: "YourSchemeName")
+      # Upload build to testflight & set field "what's new"
+      pilot(
+          changelog: ENV['WHATS_NEW_MESSAGE']
+      )
+  end
+  after_all do |lane|
+      # This block is called, only if the executed lane was successful
+  end
+  error do |lane, exception|
+  end
 end
