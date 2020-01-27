@@ -76,6 +76,7 @@
 		7568302923D51C0500A44212 /* TableViewControllerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerSpecs.swift; sourceTree = "<group>"; };
 		7568303223D51D4A00A44212 /* IssueViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewModelSpecs.swift; sourceTree = "<group>"; };
 		7568303423D5289600A44212 /* IssueListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewModel.swift; sourceTree = "<group>"; };
+		75ABB89D23DF7CFC008AEFAE /* GitHubIssuesApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubIssuesApp.entitlements; sourceTree = "<group>"; };
 		75F7F6A223D6027F0060AE4F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		75F7F6A323D6027F0060AE4F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		75F7F6AA23D607290060AE4F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 		7513827F23D32E4700D881D3 /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				75ABB89D23DF7CFC008AEFAE /* GitHubIssuesApp.entitlements */,
 				75F7F6AB23D607290060AE4F /* Localizable.strings */,
 				7513827A23D32DFB00D881D3 /* Constants.swift */,
 				75156F7B23D2F7CD004FB0BA /* Info.plist */,
@@ -699,6 +701,8 @@
 			baseConfigurationReference = 6F8084EFE9C21C2C9D9D8B23 /* Pods-GitHubIssuesApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GitHubIssuesApp/GitHubIssuesApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJ4397M46A;
 				INFOPLIST_FILE = GitHubIssuesApp/Info.plist;
@@ -708,6 +712,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobidevel.GitHubIssuesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -718,6 +723,8 @@
 			baseConfigurationReference = 16B3FDB1EE4466ACF5F68A65 /* Pods-GitHubIssuesApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GitHubIssuesApp/GitHubIssuesApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJ4397M46A;
 				INFOPLIST_FILE = GitHubIssuesApp/Info.plist;
@@ -727,6 +734,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobidevel.GitHubIssuesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
