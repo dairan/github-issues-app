@@ -1,23 +1,50 @@
- aplicação iOS Nativa em Swift que consuma a API do Github Issues ( https://developer.github.com/v3/issues/ ), usando como base o repositório do Swift ( https://github.com/apple/swift ).
+ # GitHub App.
 
-## O aplicativo deve conter
+ ## App demo sobre conhecimento de arquitura de desenvolvimento. 
+ 
+ Consome API do Github Issues (https://developer.github.com/v3/issues)
 
-* [x] Uma tela com a lista de issues do repositório
-( https://api.github.com/repos/apple/swift/issues ). Cada item da lista deve
-conter os seguintes elementos:
-    * [x] Título do issue
-    * [x] Estado do issue (ABERTO, FECHADO)
-* [x] Uma tela mostrando os detalhes do issue que foi selecionado na lista, que deve
-conter os seguintes elementos:
-    * [x] Título do issue
-    * [x] Texto de Descrição do issue
-    * [x] Avatar do usuário que criou a issue
-    * [x] Data de criação
-    * [x] Um botão que abre o browser com o link issue do site do github
+## O aplicativo contêm
+
+* Tela com a lista de issues do repositório.
+    Cada item da lista contêm os seguintes elementos:
+    
+    [x] Título.
+
+    [x] Estado (ABERTO, FECHADO).
+
+* Uma que mostra os detalhes do issue que foi selecionado na lista, que contêm os seguintes elementos:
+    
+    [x] Título.
+    
+    [x] Texto de descrição.
+    
+    [x] Avatar do usuário.
+    
+    [x] Data de criação.
+    
+    [x] Um botão que abre o browser com o link issue do site do GitHub.
 
 
-* [x] Ser escrito em Swift
-* [ ] Testes Unitários (XCTest)
-* [x] Clean Architecture (MVVM)
-* [x] Chamadas de REST com URLSession/Alamofire
+## Outra features
 
+[x] Localização (pt-BR e en-US)
+
+## Arquitetura
+
+✅ Escrito em Swift.
+
+✅ Testes Unitários (XCTest).
+
+✅ Clean Architecture (MVVM design partter).
+
+✅ Clean Architecture (Coordinator design partter).
+
+✅ Chamadas de REST com URLSession/Alamofire
+
+
+## Ferramentas de ambiente (TODO)
+
+ [x] Fastlane
+
+ [x] Bitrise (CI /CD)
