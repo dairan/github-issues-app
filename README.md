@@ -40,5 +40,5 @@
 
 ## Ferramentas de ambiente (TODO)
 
- [x] Fastlane
- [x] Bitrise (CI /CD)
+ [ ] Fastlane
+ [ ] Bitrise (CI /CD)
