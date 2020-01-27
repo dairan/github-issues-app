@@ -37,5 +37,5 @@
 ## Ferramentas de ambiente
 
  * [X] Cocoapods
- * [X] TODO: Bitrise (CI /CD)
+ * [X] Bitrise (CI /CD)
  * [ ] TODO: Fastlane 
