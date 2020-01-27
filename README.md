@@ -10,19 +10,14 @@
     Cada item da lista contêm os seguintes elementos:
     
     [x] Título.
-
     [x] Estado (ABERTO, FECHADO).
 
 * Uma que mostra os detalhes do issue que foi selecionado na lista, que contêm os seguintes elementos:
     
     [x] Título.
-    
     [x] Texto de descrição.
-    
     [x] Avatar do usuário.
-    
     [x] Data de criação.
-    
     [x] Um botão que abre o browser com o link issue do site do GitHub.
 
 
@@ -46,5 +41,4 @@
 ## Ferramentas de ambiente (TODO)
 
  [x] Fastlane
-
  [x] Bitrise (CI /CD)
