@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  DairanRecrutamento
+
+  Created by Dairan T on 20/01/20.
+  Copyright © 2020 mobidevel. All rights reserved.
+*/
+
+"Status is" = "Status is";
+"open" = "open";
+"closed" = "closed";
