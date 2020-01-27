@@ -29,6 +29,7 @@
 		7568302C23D51C0500A44212 /* TableViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7568302923D51C0500A44212 /* TableViewControllerSpecs.swift */; };
 		7568303323D51D4A00A44212 /* IssueViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7568303223D51D4A00A44212 /* IssueViewModelSpecs.swift */; };
 		7568303523D5289600A44212 /* IssueListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7568303423D5289600A44212 /* IssueListViewModel.swift */; };
+		7587CF8623DF8F9800507D5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7587CF8523DF8F9800507D5A /* README.md */; };
 		75F7F6A923D607290060AE4F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75F7F6AB23D607290060AE4F /* Localizable.strings */; };
 		C4F0E813832173C1C47378F1 /* Pods_GitHubIssuesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFA8EAE3427143CF83E0B72 /* Pods_GitHubIssuesAppTests.framework */; };
 		EF967BF5592ACF779F6F7CC7 /* Pods_GitHubIssuesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD6CA721C9058829150F956 /* Pods_GitHubIssuesApp.framework */; };
@@ -76,6 +77,7 @@
 		7568302923D51C0500A44212 /* TableViewControllerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerSpecs.swift; sourceTree = "<group>"; };
 		7568303223D51D4A00A44212 /* IssueViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewModelSpecs.swift; sourceTree = "<group>"; };
 		7568303423D5289600A44212 /* IssueListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewModel.swift; sourceTree = "<group>"; };
+		7587CF8523DF8F9800507D5A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		75ABB89D23DF7CFC008AEFAE /* GitHubIssuesApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubIssuesApp.entitlements; sourceTree = "<group>"; };
 		75F7F6A223D6027F0060AE4F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		75F7F6A323D6027F0060AE4F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 		75156F6123D2F7CB004FB0BA = {
 			isa = PBXGroup;
 			children = (
+				7587CF8523DF8F9800507D5A /* README.md */,
 				75156F6C23D2F7CB004FB0BA /* GitHubIssuesApp */,
 				7513827123D32D4C00D881D3 /* GitHubIssuesAppTests */,
 				75156F6B23D2F7CB004FB0BA /* Products */,
@@ -376,6 +379,7 @@
 			files = (
 				75156F7A23D2F7CD004FB0BA /* LaunchScreen.storyboard in Resources */,
 				75F7F6A923D607290060AE4F /* Localizable.strings in Resources */,
+				7587CF8623DF8F9800507D5A /* README.md in Resources */,
 				75156F7723D2F7CD004FB0BA /* Assets.xcassets in Resources */,
 				75156F7523D2F7CB004FB0BA /* Main.storyboard in Resources */,
 			);
@@ -704,17 +708,20 @@
 				CODE_SIGN_ENTITLEMENTS = GitHubIssuesApp/GitHubIssuesApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = EJ4397M46A;
 				INFOPLIST_FILE = GitHubIssuesApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobidevel.GitHubIssuesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -726,17 +733,20 @@
 				CODE_SIGN_ENTITLEMENTS = GitHubIssuesApp/GitHubIssuesApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = EJ4397M46A;
 				INFOPLIST_FILE = GitHubIssuesApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobidevel.GitHubIssuesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

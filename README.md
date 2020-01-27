@@ -1,4 +1,7 @@
-` # GitHub App.
+[![Build Status](https://app.bitrise.io/app/7fd3c7f523c0b036/status.svg?token=n1HcVC1C2l0wJxXa7WMb5A)](https://app.bitrise.io/app/7fd3c7f523c0b036)
+
+
+# GitHub App.
 
  ## App demo sobre conhecimento de arquitura de desenvolvimento. 
  
