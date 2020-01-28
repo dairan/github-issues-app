@@ -1,5 +1,5 @@
 app_identifier("com.mobidevel.GitHubIssuesApp") # The bundle identifier of your app
-apple_id("dairan@dairan.com") # Your Apple email address
+apple_id("apps@dairan.com") # Your Apple email address
 
 itc_team_id("488151") # App Store Connect Team ID
 team_id("EJ4397M46A") # Developer Portal Team ID
