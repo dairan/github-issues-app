@@ -20,7 +20,7 @@ platform :ios do
   lane :ultima do
     increment_build_number(
       build_number: latest_testflight_build_number + 1,
-      xcodeproj: "FomentacaoPublicaApp.xcodeproj"
+      xcodeproj: "GitHubIssuesApp.xcodeproj"
     )
   end
   desc "Push a new beta build to TestFlight"
@@ -39,7 +39,7 @@ platform :ios do
           shield: "v#{ENV['XPI_VERSION']}-#{ENV['XPI_BUILD']}-grey"
           # shield: "Version-0.0.3-blue"
       )
-      build app
+      # build app
       gym(
           export_method: "app-store",
           export_options: {
@@ -48,7 +48,7 @@ platform :ios do
               }
           },
       scheme: "GitHubIssuesApp")
-      Upload build to testflight & set field "what's new"
+      # Upload build to testflight & set field "what's new"
       pilot(
           changelog: ENV['WHATS_NEW_MESSAGE']
       )
