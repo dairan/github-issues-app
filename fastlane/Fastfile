@@ -50,7 +50,6 @@ platform :ios do
       scheme: "GitHubIssuesApp")
       # Upload build to testflight & set field "what's new"
       pilot(
-          skip_waiting_for_build_processing: true,
           changelog: ENV['WHATS_NEW_MESSAGE']
       )
   end
