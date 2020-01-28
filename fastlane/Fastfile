@@ -36,7 +36,7 @@ platform :ios do
       # More info: https://github.com/HazAT/fastlane-plugin-badge & https://github.com/HazAT/badge
       add_badge(
           alpha: true,
-          shield: "v#{ENV['XPI_VERSION']}-#{ENV['XPI_BUILD']}-grey"
+          shield: "v#{ENV['XPI_VERSION']}.#{ENV['XPI_BUILD']}-blue"
           # shield: "Version-0.0.3-blue"
       )
       # build app
