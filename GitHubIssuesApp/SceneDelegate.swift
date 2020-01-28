@@ -14,7 +14,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   var window: UIWindow?
   var appCoordenator: AppCoordinator?
 
-
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
     guard let scene = (scene as? UIWindowScene) else { return }
@@ -27,7 +26,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     appCoordenator = MainAppCoordinator(nav: nav)
     appCoordenator?.start()
 
-
     window = UIWindow(windowScene: scene)
     window?.rootViewController = nav
     window?.makeKeyAndVisible()
@@ -37,7 +35,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // Called as the scene is being released by the system.
     // This occurs shortly after the scene enters the background, or when its session is discarded.
     // Release any resources associated with this scene that can be re-created the next time the scene connects.
-    // The scene may re-connect later, as its session was not neccessarily discarded (see `application:didDiscardSceneSessions` instead).
+  // The scene may re-connect later, as its session was not neccessarily discarded (see `application:didDiscardSceneSessions` instead).
   }
 
   func sceneDidBecomeActive(_ scene: UIScene) {
@@ -69,4 +67,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     alamofireActivity.completionDelay = 0.2
   }
 }
-

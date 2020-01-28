@@ -9,33 +9,33 @@
 import UIKit
 
 class IssueListViewModel {
-  
+
   // MARK: - Properties
   private let apiManager: ApiManagerProtocol
-  
+
   var updateContent: (() -> Void)?
-  
+
   var issues: [Issue]? {
     didSet {
       self.updateContent?()
     }
   }
-  
+
   var numberRowsInSection: Int {
     return issues?.count ?? 0
   }
-  
+
   // MARK: - Initializer
   init(api: ApiManagerProtocol = ApiManager()) {
     self.apiManager = api
   }
-  
+
   // MARK: - Functions
   func issuesAtIndex(_ index: Int) -> IssueViewModel? {
     guard let issue = issues?[index] else { return nil }
     return IssueViewModel(issue: issue)
   }
-  
+
   func fetch() {
     apiManager.fetchIssues(onPage: 1) { (result) in
       switch result {
@@ -46,6 +46,5 @@ class IssueListViewModel {
       }
     }
   }
-  
-}
 
+}

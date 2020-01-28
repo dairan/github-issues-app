@@ -64,7 +64,6 @@ struct IssueViewModel {
     return URL(string: issue.user.avatarURL)
   }
 
-
   // MARK: - Initializers
   init(issue: Issue) {
     self.issue = issue
