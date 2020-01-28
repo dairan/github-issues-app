@@ -10,23 +10,23 @@ import Alamofire
 import Foundation
 
 protocol ApiManagerProtocol {
-  func fetchIssues(onPage page: Int, completionHandler: @escaping (Swift.Result<[Issue],Error>) -> ())
+  func fetchIssues(onPage page: Int, completionHandler: @escaping (Swift.Result<[Issue], Error>) -> Void)
 }
 
 class ApiManager: ApiManagerProtocol {
 
-  typealias CompletionHandler = Swift.Result<[Issue],Error>
+  typealias CompletionHandler = Swift.Result<[Issue], Error>
 
   /// Fetch data from GitHub
   /// - Parameters:
   ///   - page: pagination - TODO
   ///   - completionHandler: closure.
-  func fetchIssues(onPage page: Int = 1, completionHandler: @escaping (CompletionHandler) -> ()) {
+  func fetchIssues(onPage page: Int = 1, completionHandler: @escaping (CompletionHandler) -> Void) {
 
     // Alamorifre's URL parameters
     let urlParams = [
-      "state":"all",
-      "page":String(page),
+      "state": "all",
+      "page": String(page),
     ]
 
     request(Constants.hostURL, method: .get, parameters: urlParams)
@@ -43,8 +43,7 @@ class ApiManager: ApiManagerProtocol {
         }
     }
   }
-  
-  
+
   func decodification(with data: Data) -> [Issue] {
     let decoder = JSONDecoder()
     do {

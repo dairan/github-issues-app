@@ -16,6 +16,13 @@
 default_platform(:ios)
 
 platform :ios do
+  desc "ÚLTIMA VERSÃO"
+  lane :ultima do
+    increment_build_number(
+      build_number: latest_testflight_build_number + 1,
+      xcodeproj: "FomentacaoPublicaApp.xcodeproj"
+    )
+  end
   desc "Push a new beta build to TestFlight"
   lane :beta do
     build_app(workspace: "GitHubIssuesApp.xcworkspace", scheme: "GitHubIssuesApp")
@@ -27,19 +34,19 @@ platform :ios do
   lane :betaTESTE do
       # Add a badge to app icon. This will actually overwrite images, so be careful.
       # More info: https://github.com/HazAT/fastlane-plugin-badge & https://github.com/HazAT/badge
-      add_badge(
-          alpha: true,
-          shield: "v#{ENV['XPI_VERSION']}-#{ENV['XPI_BUILD']}-grey"
-      )
+      # add_badge(
+      #     alpha: true,
+      #     shield: "v#{ENV['XPI_VERSION']}-#{ENV['XPI_BUILD']}-grey"
+      # )
       #build app
       gym(
           export_method: "app-store",
           export_options: {
               provisioningProfiles: {
-                  "app.bundle.id" => "Your Provision Profile Name",
+                  "com.mobidevel.GitHubIssuesApp" => "match AppStore com.mobidevel.GitHubIssuesApp",
               }
           },
-      scheme: "YourSchemeName")
+      )
       # Upload build to testflight & set field "what's new"
       pilot(
           changelog: ENV['WHATS_NEW_MESSAGE']

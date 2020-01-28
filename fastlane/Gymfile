@@ -8,6 +8,6 @@
 
 scheme("GitHubIssuesApp")
 
-# sdk("iOS 11.1")
+sdk("iphoneos13.2")
 
 output_directory("./")

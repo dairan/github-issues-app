@@ -25,8 +25,6 @@ class ListViewController: UITableViewController, UseStoryBoarders {
     print("========:  atualizando...")
   }
 
-
-
   // MARK: - Life cycle of view
   override func viewDidLoad() {
     super.viewDidLoad()
