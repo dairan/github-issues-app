@@ -30,17 +30,18 @@ platform :ios do
       add_badge(
           alpha: true,
           shield: "v#{ENV['XPI_VERSION']}-#{ENV['XPI_BUILD']}-grey"
+          # shield: "Version-0.0.3-blue"
       )
       #build app
       gym(
           export_method: "app-store",
           export_options: {
               provisioningProfiles: {
-                  "app.bundle.id" => "Your Provision Profile Name",
+                  "com.mobidevel.GitHubIssuesApp" => "match AppStore com.mobidevel.GitHubIssuesApp",
               }
           },
-      scheme: "YourSchemeName")
-      # Upload build to testflight & set field "what's new"
+      scheme: "GitHubIssuesApp")
+      Upload build to testflight & set field "what's new"
       pilot(
           changelog: ENV['WHATS_NEW_MESSAGE']
       )
