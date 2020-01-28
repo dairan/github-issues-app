@@ -16,6 +16,13 @@
 default_platform(:ios)
 
 platform :ios do
+  desc "ÚLTIMA VERSÃO"
+  lane :ultima do
+    increment_build_number(
+      build_number: latest_testflight_build_number + 1,
+      xcodeproj: "FomentacaoPublicaApp.xcodeproj"
+    )
+  end
   desc "Push a new beta build to TestFlight"
   lane :beta do
     build_app(workspace: "GitHubIssuesApp.xcworkspace", scheme: "GitHubIssuesApp")
@@ -32,7 +39,7 @@ platform :ios do
           shield: "v#{ENV['XPI_VERSION']}-#{ENV['XPI_BUILD']}-grey"
           # shield: "Version-0.0.3-blue"
       )
-      #build app
+      build app
       gym(
           export_method: "app-store",
           export_options: {

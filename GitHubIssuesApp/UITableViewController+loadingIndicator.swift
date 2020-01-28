@@ -6,7 +6,6 @@
 //  Copyright © 2020 mobidevel. All rights reserved.
 //
 
-
 import AlamofireNetworkActivityIndicator
 
 extension UITableViewController {

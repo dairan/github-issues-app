@@ -17,7 +17,7 @@ struct Issue: Decodable {
   var htmlURL: String
   var state: String
 
-  enum CodingKeys: String, CodingKey  {
+  enum CodingKeys: String, CodingKey {
     case title, user, body, state
     case createdAt = "created_at"
     case htmlURL = "html_url"
