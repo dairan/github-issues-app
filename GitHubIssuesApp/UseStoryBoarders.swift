@@ -18,6 +18,6 @@ extension UseStoryBoarders {
   static func instantiate() -> Self {
     let id = String(describing: self)
     let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
-    return storyBoard.instantiateViewController(withIdentifier: id) as! Self
+    return storyBoard.instantiateViewController(withIdentifier: id) as! Self // swiftlint:disable:this force_cast
   }
 }
