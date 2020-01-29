@@ -46,11 +46,12 @@ class ApiManager: ApiManagerProtocol {
 
   func decodification(with data: Data) -> [Issue] {
     let decoder = JSONDecoder()
+    decoder.keyDecodingStrategy = .convertFromSnakeCase
     do {
       let issues = try decoder.decode([Issue].self, from: data)
       return issues
     } catch let erro {
-      print("========:  ERRO", erro.localizedDescription)
+      print("===@==!!===:  ERRO", erro)
       return []
     }
   }

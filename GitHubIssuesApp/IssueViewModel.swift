@@ -43,7 +43,7 @@ struct IssueViewModel {
   }
 
   var htmlURL: URL? {
-    return URL(string: issue.htmlURL) ?? nil
+    return URL(string: issue.htmlUrl) ?? nil
   }
 
   var state: String {
@@ -61,7 +61,7 @@ struct IssueViewModel {
   }
 
   var avatarURL: URL? {
-    return URL(string: issue.user.avatarURL)
+    return URL(string: issue.user.avatarUrl)
   }
 
   // MARK: - Initializers

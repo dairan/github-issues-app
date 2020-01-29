@@ -14,20 +14,10 @@ struct Issue: Decodable {
   var createdAt: String
   var user: User
   var body: String
-  var htmlURL: String
+  var htmlUrl: String
   var state: String
-
-  enum CodingKeys: String, CodingKey {
-    case title, user, body, state
-    case createdAt = "created_at"
-    case htmlURL = "html_url"
-  }
 }
 
 struct User: Decodable {
-  let avatarURL: String
-
-  enum CodingKeys: String, CodingKey {
-    case avatarURL = "avatar_url"
-  }
+  let avatarUrl: String
 }
