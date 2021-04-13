@@ -6,7 +6,7 @@
 
 ### Demo de aplicação de conhecimentos sobre arquitetura de desenvolvimento de apps para iOS.
 
-![GitHub Issues Demo App](https://cdn-std.droplr.net/files/acc_114520/L7UYvu 'GitHub Issues Demo App')
+#![GitHub Issues Demo App](https://cdn-std.droplr.net/files/acc_114520/L7UYvu 'GitHub Issues Demo App')
 
 Para ver o app funcinando, clique [aqui](https://appetize.io/app/uv257edhzdm8c39g4kmtczbrb4?device=iphone11pro&scale=75&orientation=portrait&osVersion=13.3).
 
